@@ -1,0 +1,174 @@
+/* Style for MacOS Terminal */
+.mac-os-terminal-prompt {
+    border-radius: 0.6em;
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+}
+
+.mac-os-dark {
+    color: #cacaca;
+    background-color: #1e1e1e;
+    border: solid 0.03em black;
+}
+
+.mac-os-bright {
+    color: #373739;
+    background-color: #ffffff;
+    border: solid 0.03em #a6aba5;
+}
+
+.mac-os-title {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+}
+
+.mac-os-dark .mac-os-title {
+    color: #fefefe;
+    background-color: #4b4b4b;
+    border-bottom: solid 1px black;
+}
+
+.mac-os-bright .mac-os-title  {
+    color: #5a5a58;
+    background-color: #dbdbdb;
+    border-bottom: solid 1px #a6aba5;
+}
+
+.mac-os-buttons::before {
+    content: '';
+    transform: translate(0.7em, -1.2em);
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 50%;
+    background: #fe5955;
+    -webkit-box-shadow: 1.4em 0 0 #eabf22, 2.8em 0 0 #4fc12d;
+            box-shadow: 1.4em 0 0 #eabf22, 2.8em 0 0 #4fc12d;
+}
+
+.mac-os-content {
+    list-style: none;
+    transform: translateY(-0.5em);
+    padding: 0;
+    margin: 0 0 0 1em;
+}
+
+.mac-os-content .input::before {
+    content: '$ ';
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 0.3em;
+}
+
+.mac-os-content .output::before {
+    content: '';
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 0.85em;
+}
+
+/* Style for Ubuntu Terminal */
+.ubuntu-terminal-prompt {
+    border: solid 0.03em #3d3c38;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    background-color: #300a24;
+    font-family: Ubuntu; 
+}
+
+.ubuntu-title {
+    font-size: 1em;
+    line-height: 1.6em;
+    padding-left: 4.7em;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    color: #dfdbd2;
+    background-color: #3c3b37;
+}
+
+.ubuntu-buttons::before {
+    content: url('data:image/png;base64,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');
+    transform: translate(0.4em, -1.4em);
+    display: inline-block;
+    height: 0.9em;
+}
+
+.ubuntu-content {
+    list-style: none;
+    transform: translateY(-0.5em);
+    padding: 0;
+    margin: 0 0 0 1em;
+    color: #f5f3f5;
+}
+
+.ubuntu-content .input::before {
+    content: '$ ';
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 0.3em;
+}
+
+.ubuntu-content .output::before {
+    content: '';
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 0.85em;
+}
+
+/* Style for Windows 10 Terminal */
+.windows-terminal-prompt {
+    border: solid 0.03em #6e6e6e;
+    background-color: #0c0c0c;
+    font-family: fixedsys, consolas, monospace;
+}
+
+.windows-title {
+    font-size: 1em;
+    line-height: 1.6em;
+    padding-left: 2em;
+    color: black;
+    background-color: #ffffff;
+}
+
+.windows-buttons {
+    width: 100%;
+}
+
+.windows-buttons::before {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAABmJLR0QAPAA7ADcNEUGGAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AEFFSocKjjbSgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAIUSURBVDjLrZQxTxpxGMZ/iocXkvNsRa9BKgUGmlIYaI6hxIalww18AJyc/Aosbk4szIQ6sPEVbB0N0dAODZUmEG2nXiWR650nFjWkHQjXWioh0Wd6l/eX9/m/z/uf2j94/4t71MxB7QNzsozbPTtRg3l2ztXVNQsPZL63Oyw8nOPy6prz8y6iMMUMQDAUxru4OBHwY+OYjmHxNBrlSN8nHgjT+XHGSecIUWAAvO51uey6JwKGl+cJ+uaY7v/kdeoZs8IM8555ZDHIl+OvA+D29htO9G93ertHvmVepl4NgJ8bhzQOP90JGH0e+wMcSlEUkskkALVajXa7faMpmUximiatVutW8PSwkCSJdDpNsVikWCySTqeRJAlRFFEUBZfLxebmJmtra+NjMyw2NjZQVRVVVQEoFAr4/X7q9Tr5fB5N0ybL4d8TejwedF13gKZpYlkWuVwOy7IAyGaz9Pt9tra2xlseiUc4jM/nQ5Zl4vE4giBQqVTQdd1xMXbCZrOJ1+slk8kAkEqlqFarXFxcEIvFHGAkEiGRSCCKIqurq4iiSLPZHAVWKhVOT08pl8sArK+vs7u762x8KNu2MQwDWZbJ5/MoikKhUGDn7bubQIC9vT3HjmEY/7VUKpUQBAHLstA0DZfLhW3brASejAJ7vZ6zlNtk27ZT/5tTB5h4oeJ/vHKnS1laUgbAUDBAKBi4t//wNzwwtzKgLZVaAAAAAElFTkSuQmCC');
+    transform: translate(0.4em, -1.35em);
+    display: inline-block;
+    height: 0.9em;
+}
+
+.windows-buttons::after {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAMCAYAAABFjt5WAAAABmJLR0QAPAA7ADcNEUGGAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AEFFTAN8KUBYwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAACvSURBVFjD7ZhRDsMgDEOdqjci9z+BcybvaxObSlv+VhJLSAjyQ/SUOJgkIYHMbCr+yWkxM5BEa+00LiLg7tiQSJJuraeLJNwdEXEJAElASYSJp2KBtJAUAJG8vCsIFoVgBMLRmWXyBHefOhP77/oq+8Bn3/sFA6DZvloQPBOEt1/4NYx7kkJQOtFWKVhbfTsYTg1lDMsYFgQ1ItZ0sKIx7FvA6Newj0kFQX0bH4PwAnalV+pNRpC7AAAAAElFTkSuQmCC');
+    transform: translate(-0.4em, -1.3em);
+    float: right;
+    display: inline-block;
+    height: 0.9em;
+}
+
+.windows-content {
+    list-style: none;
+    transform: translateY(-0.5em);
+    padding: 0;
+    margin: 0 0 0 1em;
+    color: #f5f3f5;
+}
+
+.windows-content .input::before {
+    content: '$ ';
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 0.3em;
+}
+
+.windows-content .output::before {
+    content: '';
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 0.85em;
+}
